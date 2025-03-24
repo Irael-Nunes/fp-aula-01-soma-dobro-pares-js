@@ -9,6 +9,10 @@
  */
 function somaDobroNumerosParesFuncional(numeros){
     // TODO: Insira seu código funcional aqui
+    return numeros
+        .filter(numero1 => numero1 % 2 === 0) //Filtrando somente os números pares
+        .map(numero2 => numero2 * 2) //Multiplicando cada número por 2
+        .reduce((soma, numero3) => soma + numero3, 0) // Soma total
 }
 
 /**
